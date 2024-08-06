@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block title %} Inicio {% endblock title %}
+
+{% block main %}
+
+
+{% for marca in marcas %}
+    <li>Marca: {{ marca.marca }} | Modelo: {{ marca.modelo }}</li>
+{% endfor %}
+
+
+{% endblock main %}

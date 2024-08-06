@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block title %} Guitarras Eléctricas {% endblock title %}
+
+{% block main %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <table>
+            {{ el_formulario.as_table }}
+        </table>
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}

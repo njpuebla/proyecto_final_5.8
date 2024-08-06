@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block title %} Efectos {% endblock title %}
+
+{% block main %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <table>
+            {{ ef_formulario.as_table }}
+        </table>
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock main %}
