@@ -1,6 +1,6 @@
 from django.contrib import admin
 from  app.models import Electrica, Acustica, Amplificador, Efecto
-# Register your models here. Ale prueba
+# Register your models here.
 
 admin.site.register(Electrica)
 admin.site.register(Acustica)
