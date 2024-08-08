@@ -1,0 +1,20 @@
+{% extends 'app/index.html' %}
+
+{% load static %}
+
+{% block registro %}
+
+    <div class="container row justify-content-md-center">
+        <h2 class="text-black fs-3 fw-bolder">Registro de nuevo usuario</h2>
+        <form method="post">
+            {% csrf_token %}
+            <table>
+            {{ form.as_table }}
+            </table>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+{% endblock registro %}
+
+
