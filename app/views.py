@@ -138,3 +138,7 @@ def buscar_efectos(request):
         ef_formulario = BuscaEfectoForm()
 
     return render(request, "app/buscar_efectos.html", {"ef_formulario": ef_formulario})
+
+
+def about(request):
+    return render(request, "app/about.html")

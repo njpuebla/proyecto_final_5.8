@@ -1,0 +1,98 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+
+
+{% block about %}
+
+<div class="text-center my-5">
+    <div class="container-fluid">
+
+        <h1 class="text-black fs-3 fw-bolder">Acerca de este proyecto</h1>
+        <p class="text-black-100 mb-0"> Este es un blog especializado en guitarras, solo usuarios registrados pueden acceder a toda la información disponible. </p>
+        <p class="text-black-100 mb-0"> Ha sido creado con el lenguaje Python usando el framework Django </p>
+    </div>
+</div>
+
+<div class="container-sm">
+                
+    <div class="row text-center" >
+
+        <div class="col">
+        
+            <img src="{%static 'images/python.jpg'%}" class="figure-img img-fluid rounded-circle" width="200" height="200" alt="...">
+
+        </div>
+
+        <div class="col">
+
+            <img src="{%static 'images/django.jpg'%}" class="figure-img img-fluid rounded-circle" width="200" height="200" alt="...">
+
+        </div>
+
+
+    
+    </div>
+
+
+<div class="text-center my-5">
+<div class="container-fluid">
+
+    <h1 class="text-black fs-3 fw-bolder">Miembros del equipo:</h1>
+</div>
+</div>
+
+<div class="text-center my-5">
+    
+        <div class="row text-center" >
+
+            
+            
+                <div class="col">
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="{%static 'images/nico.jpg'%}" class="card-img-top" alt="mcruz">
+                            <div   div class="card-body">
+                                <h5 class="card-title">Nicolás</h5>
+                                <p class="card-text">Capo de la economía </p>
+                                <a href="#" class="btn btn-primary">LinkedIn</a>
+                            </div>
+                    </div>
+                
+                </div>
+
+                <div class="col">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="{%static 'images/ale.jpg'%}" class="card-img-top" alt="mcruz">
+                            <div   div class="card-body">
+                                <h5 class="card-title">Alejandro</h5>
+                                <p class="card-text">Capo de Python y Django </p>
+                                <a href="#" class="btn btn-primary">LinkedIn</a>
+                            </div>
+                    </div>
+
+                </div>
+        
+                <div class="col">
+        
+                    <div class="card" style="width: 18rem;">
+                        <img src="{%static 'images/marvin.jpg'%}" class="card-img-top" alt="mcruz">
+                            <div   div class="card-body">
+                                <h5 class="card-title">Marvin Cruz</h5>
+                                <p class="card-text">Programador Python Jr. </p>
+                                <a href="#" class="btn btn-primary">LinkedIn</a>
+                            </div>
+                    </div>
+
+                </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+  {% endblock about %}
