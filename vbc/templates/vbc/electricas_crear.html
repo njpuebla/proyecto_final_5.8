@@ -1,0 +1,15 @@
+{% extends 'vbc/base.html' %}
+
+{% load static %}
+
+{% block title %} Crear Guitarra Eléctrica {% endblock title %}
+
+{% block main %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Crear">
+</form>
+
+{% endblock main %}
