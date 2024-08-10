@@ -1,0 +1,19 @@
+{% extends 'vbc/base.html' %}
+
+{% load static %}
+
+{% block title %} Eléctrica Detalle {% endblock title %}
+
+{% block main %}
+
+    <p>Marca: <i>{{electrica.marca}}</i><p>
+    <p>Modelo: <i>{{electrica.modelo}}</i><p>
+    <p>Serial: <i>{{electrica.serial}}</i><p>
+    <p>Anio: <i>{{electrica.anio}}</i><p>
+    <p>Precio: <i>{{electrica.precio}}</i><p>
+    <p>Descripcion: <i>{{electrica.descripcion}}</i><p>
+    <p>
+        <a href="{% url "ListaElectricas" %}">Regresar</a>
+    <p/>
+
+{% endblock main %}
